@@ -1,0 +1,28 @@
+@import "bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "variables";
+
+.close {
+	@include anim(color);
+	opacity: 1;
+	outline: none;
+	text-shadow: none;
+	color: rgba($primary, .4);
+	font-size: 16px;
+	line-height: ($baseline * 5);
+	margin: 0 ($unit * 5);
+	right: inherit;
+	top: inherit;
+
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.close .close__icon {
+	line-height: ($baseline * 2);
+}
+
+.close:hover {
+	color: rgba($primary, .2);
+	opacity: 1;
+}

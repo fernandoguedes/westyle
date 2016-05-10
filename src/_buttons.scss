@@ -19,8 +19,9 @@
 	}
 }
 
-.btn-default {
+.btn--default {
 	@include anim(all);
+	@extend .btn-default;
 
 	&:hover,
 	&:focus,
@@ -40,8 +41,9 @@
 	}
 }
 
-.btn-primary {
+.btn--primary {
 	@include anim(all);
+	@extend .btn-primary;
 
 	&:hover,
 	&:focus,
@@ -59,8 +61,9 @@
 	}
 }
 
-.btn-success {
+.btn--success {
 	@include anim(all);
+	@extend .btn-success;
 
 	&:hover,
 	&:focus,
@@ -78,8 +81,9 @@
 	}
 }
 
-.btn-danger {
+.btn--danger {
 	@include anim(all);
+	@extend .btn-danger;
 
 	&:hover,
 	&:focus,
@@ -97,8 +101,9 @@
 	}
 }
 
-.btn-accent {
+.btn--accent {
 	@include anim(all);
+
 	background: $btn-accent-bg;
 	color: $btn-accent-color;
 
@@ -120,8 +125,9 @@
 	}
 }
 
-.btn-inverse {
+.btn--inverse {
 	@include anim(all);
+
 	color: $btn-inverse-color;
 	background: $btn-inverse-bg;
 
@@ -143,8 +149,9 @@
 	}
 }
 
-.btn-inverse-accent {
+.btn--inverse-accent {
 	@include anim(all);
+
 	background: $btn-inverse-accent-bg;
 	color: $btn-inverse-accent-color;
 
@@ -177,19 +184,23 @@
 
 // Sizes
 
-.btn-lg {
+.btn--lg {
+	@extend .btn-lg;
+
 	@include button-size(0, 72px, 16px, 58px, 4px);
 	font-weight: 600;
 }
 
-.btn-sm {
+.btn--sm {
+	@extend .btn-sm;
+
 	@include button-size(0, 24px, 16px, 58px, 4px);
 	font-weight: 600;
 }
 
 // Transparent
 
-.btn-transparent {
+.btn--transparent {
 	background: transparent;
 	border: 0;
 	padding: 0;
@@ -206,7 +217,9 @@
 
 // Icon
 
-.btn-icon {
+.btn--icon {
+	@extend .btn-icon;
+
 	@include anim(background);
 	background: rgba($primary, .1);
 	border: 0;

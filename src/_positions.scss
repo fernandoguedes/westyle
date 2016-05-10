@@ -1,0 +1,12 @@
+.center-row {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center-row span,
+.center-row button {
+	flex: 0 1 auto;
+}

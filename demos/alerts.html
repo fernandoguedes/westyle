@@ -29,43 +29,46 @@
 </head>
 <body>
 	<h1>Alerts</h1>
-	<div id="alert1" class="alert">
-		<span class="alert-spinner alert-spinner-done"></span>
-		<span class="alert-body">
+	<div id="alert1" class="alert center-row shadow">
+		<span class="alert__spinner alert__spinner--done"></span>
+		<span class="alert__body">
 			User was deleted successfully.
 		</span>
-		<button type="button" class="close" aria-label="Close" data-onclick="toggle"><span aria-hidden="true">×</span></button>
+		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
+			<span class="close__icon icon-16-cancel"></span>
+		</button>
 	</div>
 
-	<div id="alert2" class="alert">
-		<span class="alert-spinner"></span>
-		<span class="alert-body">
+	<div id="alert2" class="alert shadow">
+		<span class="alert__spinner"></span>
+		<span class="alert__body">
 			User was deleted successfully.
 		</span>
-		<button type="button" class="close" aria-label="Close" data-onclick="toggle"><span aria-hidden="true">×</span></button>
+		<a href="javascript:void(0)" class="alert__undo-link">undo</a>
+		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
+			<span class="close__icon icon-16-cancel"></span>
+		</button>
 	</div>
 
-	<div id="alert3" class="alert">
-		<span class="alert-body">
+	<div id="danger1" class="alert alert--danger shadow">
+		<span class="alert__spinner alert__spinner--done"></span>
+		<span class="alert__body">
 			User was deleted successfully.
 		</span>
-		<button type="button" class="close" aria-label="Close" data-onclick="toggle"><span aria-hidden="true">×</span></button>
+		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
+			<span class="close__icon icon-16-cancel"></span>
+		</button>
 	</div>
 
-	<div id="danger1" class="alert alert-danger">
-		<span class="alert-spinner alert-spinner-done"></span>
-		<span class="alert-body">
+	<div id="danger2" class="alert alert--danger shadow">
+		<span class="alert__spinner"></span>
+		<span class="alert__body">
 			User was deleted successfully.
 		</span>
-		<button type="button" class="close" aria-label="Close" data-onclick="toggle"><span aria-hidden="true">×</span></button>
-	</div>
-
-	<div id="danger2" class="alert alert-danger">
-		<span class="alert-spinner"></span>
-		<span class="alert-body">
-			User was deleted successfully.
-		</span>
-		<button type="button" class="close" aria-label="Close" data-onclick="toggle"><span aria-hidden="true">×</span></button>
+		<a href="javascript:void(0)" class="alert__undo-link">undo</a>
+		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
+			<span class="close__icon icon-16-cancel"></span>
+		</button>
 	</div>
 </body>
 </html>
