@@ -44,6 +44,10 @@
 	background: rgba($brand-warning, .2);
 	color: $brand-warning;
 }
+.label--theme {
+	background: rgba($theme, .2);
+	color: rgba($theme, 1);
+}
 
 // Text ------------------------------------------------------------------------
 
