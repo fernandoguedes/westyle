@@ -19,15 +19,18 @@
 	}
 }
 
-.btn--default {
+.btn--theme {
 	@include anim(all);
 	@extend .btn-default;
+
+	background-color: rgba($theme, 1);
+	color: $auxiliary;
 
 	&:hover,
 	&:focus,
 	&.focus {
-		background-color: rgba($accent, .2);
-		color: $accent;
+		background-color: rgba($theme, .8);
+		color: $auxiliary;
 	}
 
 	&:active,
@@ -35,8 +38,33 @@
 		&:hover,
 		&:focus,
 		&.focus {
-			background-color: rgba($accent, .2);
-			color: $accent;
+			background-color: rgba($theme, .8);
+			color: $auxiliary;
+		}
+	}
+}
+
+.btn--default {
+	@include anim(all);
+	@extend .btn-default;
+
+	background-color: rgba($primary, .1);
+	color: ($primary, .6);
+
+	&:hover,
+	&:focus,
+	&.focus {
+		background-color: rgba($primary, .2);
+		color: ($primary, .8);
+	}
+
+	&:active,
+	&.active {
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: rgba($primary, .2);
+			color: ($primary, .8);
 		}
 	}
 }
