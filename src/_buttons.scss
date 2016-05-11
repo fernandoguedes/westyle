@@ -44,6 +44,31 @@
 	}
 }
 
+.btn--inverse-theme {
+	@include anim(all);
+	@extend .btn-default;
+
+	background-color: rgba($auxiliary, 1);
+	color: $theme;
+
+	&:hover,
+	&:focus,
+	&.focus {
+		background-color: rgba($auxiliary, .8);
+		color: $theme;
+	}
+
+	&:active,
+	&.active {
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: rgba($auxiliary, .8);
+			color: $theme;
+		}
+	}
+}
+
 .btn--default {
 	@include anim(all);
 	@extend .btn-default;
