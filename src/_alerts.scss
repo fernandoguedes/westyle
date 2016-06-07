@@ -2,6 +2,7 @@
 @import "variables";
 
 .alert {
+	@extend .shadow;
 	border: 0;
 	position: fixed;
 	text-align: center;
