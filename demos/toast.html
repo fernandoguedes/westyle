@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Demo: Avatar</title>
+	<title>Demo: Toast</title>
 
 	<link rel="stylesheet" href="../build/bootstrap.css">
 	<link rel="stylesheet" href="../build/fonts/icon-12.css">
@@ -10,13 +10,13 @@
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:700,400,300|Open+Sans:700,400,300">
 	<style>
-	#alert1 {
+	#toast1 {
 		bottom: 50px;
 	}
-	#alert2 {
+	#toast2 {
 		bottom: 150px;
 	}
-	#alert3 {
+	#toast3 {
 		bottom: 450px;
 	}
 	#danger1 {
@@ -28,10 +28,10 @@
 	</style>
 </head>
 <body>
-	<h1>Alerts</h1>
-	<div id="alert1" class="alert center-row">
-		<span class="alert__spinner alert__spinner--done"></span>
-		<span class="alert__body">
+	<h1>Toasts</h1>
+	<div id="toast1" class="toast">
+		<span class="toast__spinner toast__spinner--done"></span>
+		<span class="toast__body">
 			User was deleted successfully.
 		</span>
 		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
@@ -39,20 +39,20 @@
 		</button>
 	</div>
 
-	<div id="alert2" class="alert">
-		<span class="alert__spinner"></span>
-		<span class="alert__body">
+	<div id="toast2" class="toast">
+		<span class="toast__spinner"></span>
+		<span class="toast__body">
 			User was deleted successfully.
 		</span>
-		<button class="btn--transparent alert__undo-link">undo</button>
+		<button class="btn--transparent toast__undo-link">undo</button>
 		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
 			<span class="close__icon icon-16-cancel"></span>
 		</button>
 	</div>
 
-	<div id="danger1" class="alert alert--danger">
-		<span class="alert__spinner alert__spinner--done"></span>
-		<span class="alert__body">
+	<div id="danger1" class="toast toast--danger">
+		<span class="toast__spinner toast__spinner--done"></span>
+		<span class="toast__body">
 			User was deleted successfully.
 		</span>
 		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
@@ -60,12 +60,12 @@
 		</button>
 	</div>
 
-	<div id="danger2" class="alert alert--danger">
-		<span class="alert__spinner"></span>
-		<span class="alert__body">
+	<div id="danger2" class="toast toast--danger">
+		<span class="toast__spinner"></span>
+		<span class="toast__body">
 			User was deleted successfully.
 		</span>
-		<button class="btn--transparent alert__undo-link">undo</button>
+		<button class="btn--transparent toast__undo-link">undo</button>
 		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
 			<span class="close__icon icon-16-cancel"></span>
 		</button>

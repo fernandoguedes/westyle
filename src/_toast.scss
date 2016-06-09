@@ -1,7 +1,6 @@
-@import "bootstrap-sass/assets/stylesheets/bootstrap/alerts";
 @import "variables";
 
-.alert {
+.toast {
 	@extend .shadow;
 	border: 0;
 	position: fixed;
@@ -19,22 +18,22 @@
 	padding: 0;
 }
 
-.alert--danger {
+.toast--danger {
 	background-color: $white;
 }
 
-.alert--success {
+.toast--success {
 	background-color: $white;
 }
 
-.alert__body {
+.toast__body {
 	display: inline-block;
 	line-height: ($baseline * 5);
 	min-height: ($baseline * 5);
 	margin: 0 0 0 ($unit * 5);
 }
 
-.alert__undo-link {
+.toast__undo-link {
 	color: $accent;
 	font-size: 14px;
 	font-weight: 700;
@@ -46,7 +45,7 @@
 	transition: color 0.2s;
 }
 
-.alert__undo-link:hover {
+.toast__undo-link:hover {
 	color: rgba($accent, .8);
 }
 
@@ -61,7 +60,7 @@
 	}
 }
 
-.alert__spinner {
+.toast__spinner {
 	margin: 0 0 0 ($unit*5);
 	top: 9px;
 	color: white;
@@ -76,14 +75,14 @@
 	text-align: center;
 }
 
-.alert__spinner:before {
+.toast__spinner:before {
 	height: 24px;
 	position: absolute;
 	width: 24px;
 	margin-left: -12px;
 }
 
-.alert__spinner:not(:required):before {
+.toast__spinner:not(:required):before {
 	content: "";
 	border-radius: 50%;
 	border: 3px solid white;
@@ -94,21 +93,21 @@
 	-webkit-animation: full-rotation .6s linear infinite;
 }
 
-.alert__spinner--done:not(:required):before {
-	content: "\E01A";
+.toast__spinner--done:not(:required):before {
+	content: "\E01B";
 	background: $brand-success;
 	border-color: $brand-success;
 	animation: none;
 	-webkit-animation: none;
 }
 
-.alert--danger .alert__spinner:not(:required):before {
+.toast--danger .toast__spinner:not(:required):before {
 	border-bottom-color: $brand-danger;
 	border-left-color: $brand-danger;
 	border-top-color: $brand-danger;
 }
 
-.alert--danger .alert__spinner--done:not(:required):before {
+.toast--danger .toast__spinner--done:not(:required):before {
 	background: $brand-danger;
 	border-color: $brand-danger;
 }
