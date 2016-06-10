@@ -30,14 +30,14 @@
 	display: inline-block;
 	line-height: ($baseline * 5);
 	min-height: ($baseline * 5);
-	margin: 0 0 0 ($unit * 5);
+	margin: 0;
 }
 
 .toast__undo-link {
 	color: $accent;
 	font-size: 14px;
 	font-weight: 700;
-	margin: 0 0 0 ($unit * 5);
+	margin: 0 0 0 17px;
 	text-transform: uppercase;
 
 	position: relative;
@@ -64,7 +64,7 @@
 }
 
 .toast__spinner {
-	margin: 0;
+	margin: 0 15px 0 0;
 	top: 7px;
 	color: white;
 	display: inline-block;

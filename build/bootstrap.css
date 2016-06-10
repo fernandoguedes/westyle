@@ -5180,13 +5180,13 @@ a.thumbnail.active {
   display: inline-block;
   line-height: 60px;
   min-height: 60px;
-  margin: 0 0 0 20px; }
+  margin: 0; }
 
 .toast__undo-link {
   color: #647efb;
   font-size: 14px;
   font-weight: 700;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 17px;
   text-transform: uppercase;
   position: relative;
   top: 1px;
@@ -5206,7 +5206,7 @@ a.thumbnail.active {
     -webkit-transform: rotate(360deg); } }
 
 .toast__spinner {
-  margin: 0;
+  margin: 0 15px 0 0;
   top: 7px;
   color: white;
   display: inline-block;

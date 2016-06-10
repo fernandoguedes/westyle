@@ -17,20 +17,20 @@
 		bottom: 150px;
 	}
 	#toast3 {
-		bottom: 450px;
-	}
-	#danger1 {
 		bottom: 250px;
 	}
-	#danger2 {
+	#danger1 {
 		bottom: 350px;
+	}
+	#danger2 {
+		bottom: 450px;
 	}
 	</style>
 </head>
 <body>
 	<h1>Toasts</h1>
 	<div id="toast1" class="toast">
-		<span class="toast__spinner toast__spinner--done"></span>
+		<!--<span class="toast__spinner toast__spinner--done"></span>-->
 		<span class="toast__body">
 			User was deleted successfully.
 		</span>
@@ -48,6 +48,17 @@
 		<!--<button type="button" class="close" aria-label="Close" data-onclick="toggle">
 			<span class="close__icon icon-16-cancel"></span>
 		</button>-->
+	</div>
+
+	<div id="toast3" class="toast">
+		<span class="toast__spinner toast__spinner--done"></span>
+		<span class="toast__body">
+			User was deleted successfully.
+		</span>
+		<button class="btn--transparent toast__undo-link">undo</button>
+		<button type="button" class="close" aria-label="Close" data-onclick="toggle">
+			<span class="close__icon icon-16-cancel"></span>
+		</button>
 	</div>
 
 	<div id="danger1" class="toast toast--danger">
