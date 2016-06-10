@@ -5168,7 +5168,7 @@ a.thumbnail.active {
   left: 50px;
   margin: 0;
   min-height: 60px;
-  padding: 0; }
+  padding: 0 20px; }
 
 .toast--danger {
   background-color: #fff; }
@@ -5188,6 +5188,8 @@ a.thumbnail.active {
   font-weight: 700;
   margin: 0 0 0 20px;
   text-transform: uppercase;
+  position: relative;
+  top: 1px;
   -webkit-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s; }
@@ -5204,8 +5206,8 @@ a.thumbnail.active {
     -webkit-transform: rotate(360deg); } }
 
 .toast__spinner {
-  margin: 0 0 0 20px;
-  top: 9px;
+  margin: 0;
+  top: 7px;
   color: white;
   display: inline-block;
   font-family: "icon-12";
@@ -5248,6 +5250,14 @@ a.thumbnail.active {
 .toast--danger .toast__spinner--done:not(:required):before {
   background: #e64545;
   border-color: #e64545; }
+
+.toast .close {
+  padding: 0;
+  margin: 0 0 0 20px; }
+
+.toast .close .close__icon {
+  position: relative;
+  top: 2px; }
 
 @-webkit-keyframes slideInLeft {
   0% {
