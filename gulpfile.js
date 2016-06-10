@@ -1,11 +1,13 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
+var sass = require('gulp-sass');
 
 gulp.task('build', function() {
 	return gulp.src('src/*.scss')
 		.pipe(sass({includePaths: ['node_modules']}))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('build'));
 });
 

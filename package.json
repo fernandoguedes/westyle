@@ -3,7 +3,7 @@
   "name": "westyle",
   "version": "0.0.0",
   "scripts": {
-  	"test": "gulp build"
+    "test": "gulp build"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
@@ -13,6 +13,7 @@
     "gulp-sass": "^2.0.1"
   },
   "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-iconfont": "^2.0.0",
     "gulp-iconfont-css": "0.0.9",
     "gulp-sass": "^2.3.1"
