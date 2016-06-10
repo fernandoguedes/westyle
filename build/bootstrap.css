@@ -5168,7 +5168,7 @@ a.thumbnail.active {
   left: 50px;
   margin: 0;
   min-height: 60px;
-  padding: 0 20px; }
+  padding: 0; }
 
 .toast--danger {
   background-color: #fff; }
@@ -5188,8 +5188,6 @@ a.thumbnail.active {
   font-weight: 700;
   margin: 0 0 0 20px;
   text-transform: uppercase;
-  position: relative;
-  top: 1px;
   -webkit-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s; }
@@ -5206,8 +5204,8 @@ a.thumbnail.active {
     -webkit-transform: rotate(360deg); } }
 
 .toast__spinner {
-  margin: 0;
-  top: 7px;
+  margin: 0 0 0 20px;
+  top: 9px;
   color: white;
   display: inline-block;
   font-family: "icon-12";
@@ -5251,13 +5249,55 @@ a.thumbnail.active {
   background: #e64545;
   border-color: #e64545; }
 
-.toast .close {
-  padding: 0;
-  margin: 0 0 0 20px; }
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
-.toast .close .close__icon {
-  position: relative;
-  top: 2px; }
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft; }
+
+.animated {
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
